@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "168010481398",
+    "project_id": "snu-cma",
+    "storage_bucket": "snu-cma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168010481398:android:815a680af3ddd4866736d7",
+        "android_client_info": {
+          "package_name": "com.example.snucms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168010481398-28n97nrjljsv86bi9gd83vsqonr7jgi3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjwIAWF_Qc1jkk5KqczxEk3o7zvhnzTd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168010481398-28n97nrjljsv86bi9gd83vsqonr7jgi3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

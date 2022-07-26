@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:background="@drawable/tuckshop_2_border"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+
+        android:layout_width="23dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/foodImage"
+        app:layout_constraintEnd_toStartOf="@+id/textViewItem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Item"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="@color/black"
+        android:background="@drawable/mybutton2"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:background="@drawable/mybutton2"
+        android:textColor="@color/black"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/btnAddQty"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

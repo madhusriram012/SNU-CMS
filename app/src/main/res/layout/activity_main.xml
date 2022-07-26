@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222831"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:fontFamily="@font/arbutus"
+        android:gravity="center_vertical"
+        android:paddingLeft="100dp"
+        android:text="SNU CMS"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <RelativeLayout
+        android:id="@+id/btnTimetable"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/Heading"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/mybutton2"
+        android:text="Timetable">
+
+
+        <TextView
+            android:id="@+id/timetable"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-45dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/calenderIcon"
+            android:fontFamily="@font/merriweather_sans"
+            android:gravity="center"
+            android:text="Time Table"
+            android:textSize="24sp" />
+
+        <ImageView
+
+            android:id="@+id/calenderIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/timetable" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnGymSlot"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btnTimetable"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/mybutton"
+        android:text="Timetable">
+
+
+        <TextView
+            android:id="@+id/gymSlot"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-45dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/gymIcon"
+            android:fontFamily="@font/merriweather_sans"
+            android:gravity="center"
+            android:text="Gym"
+            android:textSize="24sp" />
+
+        <ImageView
+
+            android:id="@+id/gymIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/gym" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnTuckshop"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btnGymSlot"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/mybutton2"
+        android:text="Timetable">
+
+
+        <TextView
+            android:id="@+id/tuck"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-45dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/tuckIcon"
+            android:fontFamily="@font/merriweather_sans"
+            android:gravity="center"
+            android:text="Tuck Shop"
+            android:textSize="24sp" />
+
+        <ImageView
+
+            android:id="@+id/tuckIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/tuckshop" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnCallBob"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btnTuckshop"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/mybutton"
+        android:text="Timetable">
+
+
+        <TextView
+            android:id="@+id/callBob"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-45dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/bobIcon"
+            android:fontFamily="@font/merriweather_sans"
+            android:gravity="center"
+            android:text="Call Bob"
+            android:textSize="24sp" />
+
+        <ImageView
+
+            android:id="@+id/bobIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/callbob" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:layout_below="@+id/btnCallBob"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/mybutton2"
+        android:text="Timetable">
+
+
+        <TextView
+            android:id="@+id/library"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-45dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/libraryIcon"
+            android:fontFamily="@font/merriweather_sans"
+            android:gravity="center"
+            android:text="Library Entry"
+            android:textSize="24sp" />
+
+        <ImageView
+
+            android:id="@+id/libraryIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/library" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/mybutton2"
+        android:text="Timetable">
+
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="1dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/merriweather_sans"
+            android:gravity="center"
+            android:text="Log Out"
+            android:background="@drawable/mybutton"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <!--    </RelativeLayout>-->
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/btnTuckshop"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_below="@id/btnGymSlot"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_marginHorizontal="110dp"-->
+
+    <!--        android:layout_marginStart="29dp"-->
+    <!--        android:layout_marginTop="127dp"-->
+    <!--        android:background="@drawable/mybutton2"-->
+    <!--        android:src="@drawable/tuckshop">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="21dp"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginTop="42dp"-->
+    <!--            android:layout_marginEnd="14dp"-->
+    <!--            android:layout_marginBottom="37dp"-->
+    <!--            android:text="Tuck shop"-->
+    <!--            android:textAlignment="gravity"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.506">-->
+
+    <!--        </TextView>-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView2"-->
+    <!--            android:layout_width="42dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginTop="35dp"-->
+    <!--            android:layout_marginEnd="18dp"-->
+    <!--            android:layout_marginBottom="25dp"-->
+    <!--            android:layout_toStartOf="@+id/textView"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/textView"-->
+    <!--            app:layout_constraintHorizontal_bias="1.0"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:srcCompat="@drawable/tuckshop" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/btnCallBob"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_below="@+id/btnGymSlot"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_marginHorizontal="110dp"-->
+    <!--        android:layout_marginTop="127dp"-->
+    <!--        android:layout_marginEnd="29dp"-->
+    <!--        android:background="@drawable/mybutton"-->
+    <!--        android:text="Call bob">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/callbob"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="21dp"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginTop="42dp"-->
+    <!--            android:layout_marginEnd="20dp"-->
+    <!--            android:layout_marginBottom="37dp"-->
+    <!--            android:text="Call Bob"-->
+    <!--            android:textAlignment="gravity"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.506" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageview3"-->
+    <!--            android:layout_width="42dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginTop="32dp"-->
+    <!--            android:layout_marginEnd="18dp"-->
+    <!--            android:layout_marginBottom="28dp"-->
+    <!--            android:layout_toStartOf="@+id/callbob"-->
+    <!--            android:src="@drawable/callbob"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/callbob"-->
+    <!--            app:layout_constraintHorizontal_bias="1.0"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    </RelativeLayout>-->
+
+
+    <!--    <RelativeLayout-->
+
+    <!--        android:id="@+id/btnLibrary"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_below="@+id/btnCallBob"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginHorizontal="110dp"-->
+    <!--        android:layout_marginStart="29dp"-->
+    <!--        android:layout_marginTop="116dp"-->
+    <!--        android:background="@drawable/mybutton2">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/library"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="21dp"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginEnd="10dp"-->
+    <!--            android:layout_marginBottom="37dp"-->
+    <!--            android:text="Library Entry"-->
+    <!--            android:textAlignment="gravity"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.506" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageview4"-->
+    <!--            android:layout_width="42dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginTop="34dp"-->
+    <!--            android:layout_marginEnd="10dp"-->
+    <!--            android:layout_marginBottom="26dp"-->
+    <!--            android:layout_toStartOf="@+id/library"-->
+    <!--            android:src="@drawable/library"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/library"-->
+    <!--            app:layout_constraintHorizontal_bias="1.0"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/btnLogout"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="97dp"-->
+    <!--        android:layout_below="@+id/btnCallBob"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginHorizontal="110dp"-->
+    <!--        android:layout_marginStart="231dp"-->
+    <!--        android:layout_marginTop="118dp"-->
+    <!--        android:layout_marginEnd="30dp"-->
+    <!--        android:background="@drawable/mybutton">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/logout"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="21dp"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginEnd="10dp"-->
+    <!--            android:layout_marginBottom="37dp"-->
+    <!--            android:text="LOG OUT"-->
+    <!--            android:textAlignment="gravity"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.506" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/logoutimg"-->
+    <!--            android:layout_width="42dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginTop="34dp"-->
+    <!--            android:layout_marginEnd="10dp"-->
+    <!--            android:layout_marginBottom="26dp"-->
+    <!--            android:layout_toStartOf="@+id/logout"-->
+    <!--            android:src="@drawable/logout"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/logout"-->
+    <!--            app:layout_constraintHorizontal_bias="1.0"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    </RelativeLayout>-->
+
+
+</RelativeLayout>

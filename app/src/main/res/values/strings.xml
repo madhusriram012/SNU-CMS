@@ -1,0 +1,34 @@
+<resources>
+    <string name="google_icon">google icon</string>
+    <string name="facebook_icon">facebook icon</string>
+    <string name="or">OR</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="top_icon">TOP ICON</string>
+    <string name="app_name">SNU CMS</string>
+    <string name="add_entry">Add Entry</string>
+    <string name="get_slot">Get Slot</string>
+    <string name="populate_slot">Populate slot</string>
+    <string name="set_slot">Set slot</string>
+    <string name="populate_issue">populate issue</string>
+    <string name="call_bob">Call Bob</string>
+    <string name="set_issue">set issue</string>
+    <string name="get_issue">get issue</string>
+    <string name="_0000">0000</string>
+    <string name="description">Description</string>
+    <string name="resolved">Resolved</string>
+    <string name="pending">Pending</string>
+    <string name="gym_slot">Gym Slot</string>
+    <string name="verify">Verify</string>
+    <string name="title">Title</string>
+    <string name="location">Location</string>
+    <string name="delivered">Delivered</string>
+    <string name="pref_file_key">com.example.snucms.studentinfo</string>
+    <string name="back"><![CDATA[<]]></string>
+    <string name="forward"><![CDATA[>]]></string>
+    <string name="weekly">Weekly</string>
+    <string name="Save">Save</string>
+    <string name="log_out">Log Out</string>
+
+</resources>

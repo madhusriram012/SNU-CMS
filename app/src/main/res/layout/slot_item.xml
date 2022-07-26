@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mybutton2"
+    android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="10dp"
+    android:elevation="50in"
+    android:outlineAmbientShadowColor="#FF0000"
+    android:padding="10dp">
+
+
+  <TextView
+      android:id="@+id/slotTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Medium Text"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <TextView
+      android:id="@+id/textViewTotal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Total: "
+      android:textColor="@color/black"
+      android:layout_marginTop="10dp"
+      app:layout_constraintTop_toBottomOf="@id/slotTitle"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+      android:id="@+id/textViewRemaining"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="30dp"
+      android:text="Remaining: "
+      android:textColor="@color/black"
+      android:layout_marginTop="10dp"
+      app:layout_constraintTop_toBottomOf="@+id/slotTitle"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.4"/>
+
+
+  <Button
+      android:id="@+id/btnBookSlot"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="BOOK"
+      android:textColor="@color/black"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <TextView
+      android:id="@+id/textViewBooked"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Booked"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:visibility="gone"
+      android:layout_marginTop="12dp"
+      android:layout_marginEnd="20dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <TextView
+      android:id="@+id/textViewFull"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:layout_marginEnd="20dp"
+      android:text="Slots filled!"
+      android:textColor="#E91E63"
+      android:textSize="16sp"
+      android:visibility="gone"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/btnCancelSlot"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Cancel"
+      android:textColor="@color/black"
+      android:layout_marginTop="25dp"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textViewBooked" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/akronim</item>
+        <item>@font/arbutus</item>
+        <item>@font/lato_black</item>
+        <item>@font/mandali</item>
+        <item>@font/merriweather_sans</item>
+    </array>
+</resources>
